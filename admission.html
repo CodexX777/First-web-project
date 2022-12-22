@@ -1,101 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="fnavbar">
-      <div id="sym">
-        <img id="logo" src="/images/emblem.png" height="70px" width="60px" />
-      </div>
-      <div class="button">
-        <div id="index" class="navbutton">
-          <a href="./School-website/index.html">Home</a>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <div class="fnavbar">
+            <div id="sym"><img id=logo src="/images/emblem.png" height="70px" width="60px"></div>
+            <div class="button">
+            <div id="index" class="navbutton"><a  href="/index.html" >Home</a></div>
+            <div id="gallery" class="navbutton"><a  href="/gallery.html" >Gallery</a></div>
+            <div id="login" class="navbutton"><a href="/login.html" >Login</a></div> 
+            <div id="admission" class="navbutton"><a  href="/admission.html"> Admission</a></div>
+            <div id="fees" class="navbutton"><a  href="/Fees.html">Fee Structure</a></div>
+            <div id="calc" class="navbutton"><a href="/calculator.html"><img src="/images/download-icon-calculator-131994967672059924_512.png" width="35"height="30"></a></div>
         </div>
-        <div id="gallery" class="navbutton">
-          <a href="./School-website/gallery.html">Gallery</a>
-        </div>
-        <div id="login" class="navbutton">
-          <a href="./School-website/login.html">Login</a>
-        </div>
-        <div id="admission" class="navbutton">
-          <a href="./School-website/admission.html"> Admission</a>
-        </div>
-        <div id="fees" class="navbutton">
-          <a href="./School-website/Fees.html">Fee Structure</a>
-        </div>
-        <div id="calc" class="navbutton">
-          <a href="./School-website/calculator.html"
-            ><img
-              src="/images/download-icon-calculator-131994967672059924_512.png"
-              width="35"
-              height="30"
-          /></a>
-        </div>
-      </div>
+        
     </div>
+        
+        <form action="/registraion.php" method="GET">
+            <table cellspacing="20">
+                <tr>
+                    <th><label for="name">Name</label></th>
+                    <th><label for="fname">Father's Name</label></th>                    
+                    <th><label for="mob">Mob no.</label></th>
+                    <th><label>Gender</label></th>
+                </tr> 
+                
+                <tr>
+                    <td><input id="name" type="text"></td>
+                    <td><input id="fname" type="text"></td>  
+                    <td><input id="mob" type="number"></td> 
+                    <td> 
+                        <label for="male">Male</label>
+                        <input id="male" type="radio" value="male" name="gender">
+                       
+                        <label for="female">Female</label>
+                        <input id="female" type="radio" value="female" name="gender">
+                    </td>     
+                </tr>
+                
+                <tr>
+                    
+                   
+                </tr>
+                
+                <tr>
+                    <th><label for="mail">E-mail</label></th>
+                    <th><label for="dob">Date of Birth</label></th>
+                    <th><label for="course">Course</label></th>
+                    <th><label for="state">State</label></th>
+                    
+                    
+                </tr>
 
-    <form action="/registraion.php" method="GET">
-      <table cellspacing="20">
-        <tr>
-          <th><label for="name">Name</label></th>
-          <th><label for="fname">Father's Name</label></th>
-          <th><label for="mob">Mob no.</label></th>
-          <th><label>Gender</label></th>
-        </tr>
+                <tr>
+                    <td><input id="mail" type="email"></td>
+                    <td><input id="dob" type="date"></td>
+                    <td>
+                        
+                        <select id="course">
+                            <option value="B.tech">B.tech</option>
+                            <option value="B.com">B.Com</option>
+                            <option value="M.com">M.Com</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input list="state">
+                
+                            <datalist id="state">
+                                <option value="Uttar Pradesh"></option>
+                                <option value="Rajasthan"></option>
+                                <option value="Bihar"></option>
+                                <option value="Maharashtra"></option>
+                                
+                            </datalist>
+                    </td>
 
-        <tr>
-          <td><input id="name" type="text" /></td>
-          <td><input id="fname" type="text" /></td>
-          <td><input id="mob" type="number" /></td>
-          <td>
-            <label for="male">Male</label>
-            <input id="male" type="radio" value="male" name="gender" />
-
-            <label for="female">Female</label>
-            <input id="female" type="radio" value="female" name="gender" />
-          </td>
-        </tr>
-
-        <tr></tr>
-
-        <tr>
-          <th><label for="mail">E-mail</label></th>
-          <th><label for="dob">Date of Birth</label></th>
-          <th><label for="course">Course</label></th>
-          <th><label for="state">State</label></th>
-        </tr>
-
-        <tr>
-          <td><input id="mail" type="email" /></td>
-          <td><input id="dob" type="date" /></td>
-          <td>
-            <select id="course">
-              <option value="B.tech">B.tech</option>
-              <option value="B.com">B.Com</option>
-              <option value="M.com">M.Com</option>
-            </select>
-          </td>
-          <td>
-            <input list="state" />
-
-            <datalist id="state">
-              <option value="Uttar Pradesh"></option>
-              <option value="Rajasthan"></option>
-              <option value="Bihar"></option>
-              <option value="Maharashtra"></option>
-            </datalist>
-          </td>
-        </tr>
-        <tr>
-          <th><label for="address">Address</label></th>
-        </tr>
-
-        <tr>
-          <td><textarea id="address" rows="5"></textarea></td>
-          <td><input id="submit" type="submit" /></td>
-        </tr>
-      </table>
-    </form>
-  </body>
+                </tr>
+                <tr>
+                    <th><label for="address">Address</label></th>
+                </tr>
+               
+                <tr>
+                    <td><textarea id="address" rows="5"></textarea></td>
+                    <td><input id="submit" type="submit"></td>
+                </tr>   
+            
+            </table>
+            
+            
+        
+        </form>
+        
+    </body>
 </html>
